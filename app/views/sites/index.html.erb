@@ -1,0 +1,23 @@
+<%= form_for @site do |f| %>
+  <p>
+    <%= f.label :site_name %>
+    <%= f.text_field :site_name %>
+  </p>
+  <p>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </p>
+  <p>
+    <%= f.submit 'Create Tourist Site' %>
+  </p>
+<% end %>
+
+<% @sites.each do |site| %>
+  <ul>
+    <li>
+      <%= site.site_name %>
+      <br>
+      <%= site.location %>
+    </li>
+  </ul>
+<% end %>
