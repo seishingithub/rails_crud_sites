@@ -6,4 +6,5 @@
   </li>
 </ul>
 
-<%= link_to 'Edit', edit_site_path %>
+<%= link_to 'Edit', edit_site_path(@site) %>
+<%= link_to 'Delete', site_path(@site), method: :delete %>
