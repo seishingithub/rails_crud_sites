@@ -1,0 +1,13 @@
+<%= form_for @site do |f| %>
+  <p>
+    <%= f.label :site_name %>
+    <%= f.text_field :site_name %>
+  </p>
+  <p>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>

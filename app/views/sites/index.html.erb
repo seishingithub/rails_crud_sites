@@ -15,7 +15,7 @@
 <% @sites.each do |site| %>
   <ul>
     <li>
-      <%= site.site_name %>
+      <%= link_to "#{site.site_name}", site_path(site) %>
       <br>
       <%= site.location %>
     </li>
